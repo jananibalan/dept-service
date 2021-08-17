@@ -2,4 +2,6 @@ spring:
   cloud:
     config:
       enabled: true
-      uri: http://localhost:9296
+      uri: configserver:https://cloud-config-server-m.herokuapp.com/
+      name: department
+      profile: prod
